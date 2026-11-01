@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Join Lusibane | Weekly waste collection and yard care in Nkomazi</title>
+<meta name="description" content="Fill in one short form to join a Lusibane plan. Our team acknowledges it and contacts you to agree the plan, price and first collection day.">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,500..900;1,100..125,500..900&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css"></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="ok" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></symbol></defs></svg>
+
+<nav><div class="in"><a class="lg" href="/" aria-label="Lusibane Projects home"><img src="/assets/logo.png" alt="Lusibane Projects (Pty) Ltd"></a>
+<ul class="nl"><li><a href="/#about">About</a></li><li><a href="/#services">Services</a></li><li><a href="/#plans">Plans</a></li><li><a href="/#gallery">Our Work</a></li><li><a href="/#contact">Contact</a></li></ul>
+<span style="display:flex;gap:10px"><a class="nc" href="/">Back to site</a></span></div></nav>
+
+<header class="pg-hd"><div class="in">
+<div class="eb"><span>Join Lusibane</span></div>
+<h1>One form. <em>We do the rest.</em></h1>
+<p>Tell us who you are and which plan you want. Our team acknowledges your form and contacts you to agree the plan, the price and your first collection day. No account, no password.</p>
+</div></header>
+
+<main class="jn-wrap">
+<div id="formbox">
+<form class="jn-form" id="jf" novalidate>
+<h2>Your joining form</h2>
+<p class="sub">Takes about two minutes. Fields marked * are needed.</p>
+<div class="fr"><div class="ff" data-f="name"><label for="name">Full name *</label><input id="name" name="name" autocomplete="name" maxlength="100" required placeholder="Your name and surname"><span class="ferr"></span></div>
+<div class="ff" data-f="phone"><label for="phone">Phone / WhatsApp *</label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="25" required placeholder="e.g. 081 578 6526"><span class="ferr"></span></div></div>
+<div class="fr"><div class="ff" data-f="area"><label for="area">Area or street *</label><input id="area" name="area" autocomplete="address-level2" maxlength="120" required placeholder="e.g. Schoemansdal"><span class="ferr"></span></div>
+<div class="ff" data-f="email"><label for="email">Email (optional)</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="For email replies"><span class="ferr"></span></div></div>
+<div class="ff" data-f="address"><label for="address">Address or directions to your gate (optional)</label><input id="address" name="address" autocomplete="street-address" maxlength="200" placeholder="House number, landmark or how to find you"><span class="ferr"></span></div>
+<div class="ff" data-f="plan"><label for="plan">What would you like to join? *</label>
+<select id="plan" name="plan">
+<option value="Lusibane Home">Lusibane Home, R150 / month (weekly waste)</option>
+<option value="Lusibane Home Plus">Lusibane Home Plus, R500 / month (waste and yard care)</option>
+<option value="Lusibane Church">Church plan, from R400 / month</option>
+<option value="Lusibane School">School plan, R300 / month</option>
+<option value="Lusibane Business">Business plan, from R200 / month</option>
+<option value="Not sure yet, please advise me">I am not sure yet, please advise me</option>
+</select><span class="ferr"></span></div>
+<div class="fr"><div class="ff"><label id="cl">How should we contact you? *</label>
+<div class="pills" role="radiogroup" aria-labelledby="cl">
+<label><input type="radio" name="contact_pref" value="WhatsApp" checked><span>WhatsApp</span></label>
+<label><input type="radio" name="contact_pref" value="Phone call"><span>Phone call</span></label>
+<label><input type="radio" name="contact_pref" value="Email"><span>Email</span></label></div></div>
+<div class="ff" data-f="best_time"><label for="best_time">Best time to reach you</label>
+<select id="best_time" name="best_time"><option value="Any time, Monday to Friday">Any time, Monday to Friday</option><option value="Mornings (08:00 to 12:00)">Mornings (08:00 to 12:00)</option><option value="Afternoons (12:00 to 16:00)">Afternoons (12:00 to 16:00)</option></select></div></div>
+<div class="ff last" data-f="details"><label for="details">Anything we should know? (optional)</label><textarea id="details" name="details" maxlength="1000" placeholder="Number of bins or bags, size of the yard, gate access, preferred collection day"></textarea><span class="ferr"></span></div>
+<div class="hp" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></div>
+<label class="consent" id="consent"><input type="checkbox" id="agree" name="consent"><span>I agree that Lusibane Projects may use these details to contact me about joining and to provide the service. They are kept private and are not shared (POPIA).</span></label>
+<div class="jn-go"><button type="submit" id="go">Send joining form &rarr;</button><p class="fmsg" id="msg" role="status" aria-live="polite"></p></div>
+</form>
+</div>
+
+<aside class="jn-aside">
+<div class="jn-card jn-plan" id="planbox" aria-live="polite"></div>
+<div class="jn-card"><h3>What happens next</h3>
+<ol class="steps"><li><b>You send the form</b>It reaches our office inbox and our email straight away.</li>
+<li><b>We acknowledge it</b>A team member confirms we have seen it.</li>
+<li><b>We contact you</b>By the way you chose, to agree the plan, price and first collection day.</li>
+<li><b>Service starts</b>Month to month. Stop any time with 2 weeks' notice.</li></ol></div>
+<p class="jn-alt">Prefer to talk? Call or WhatsApp <a href="tel:+27815786526">081 578 6526</a>, Monday to Friday, 08:00 to 16:00.</p>
+</aside>
+</main>
+
+<section class="jn-work" id="work"><div class="sh"><div><div class="lab"><span>Our Work</span></div><h2 class="ttl">See what we <em>do</em></h2></div><p>Real jobs from around Nkomazi. Tap a picture or video to preview it.</p></div>
+<div data-gallery data-limit="4" data-more="/#gallery" data-more-label="See all our work"></div></section>
+
+<footer><div class="fi"><div><div class="lg" style="display:inline-flex"><img src="/assets/logo.png" alt="Lusibane Projects" style="height:40px"></div><p>A registered local company bringing waste collection, yard care and property maintenance to Nkomazi. Clean Yard. Clean Home.</p></div>
+<div><h5>Services</h5><a href="/#services">Waste Collection</a><a href="/#services">Garden &amp; Yard</a><a href="/#services">Paving</a><a href="/#services">Fencing</a><a href="/#services">Painting</a></div>
+<div><h5>Company</h5><a href="/#about">About</a><a href="/#plans">Plans</a><a href="/join">Join</a><a href="/#contact">Contact</a><a href="/staff">Staff</a><a href="https://wa.me/27815786526">WhatsApp</a></div></div>
+<div class="fbm"><span>© 2026 Lusibane Projects (Pty) Ltd. Registration 2026/771385/07.</span><span>Lusibane Maintenance and Recycling, a division of Lusibane Projects</span></div></footer>
+<a class="wa" href="https://wa.me/27815786526" target="_blank" rel="noopener">WhatsApp Us</a>
+<script src="/assets/join.js" defer></script>
+<script src="/assets/gallery.js" defer></script>
+</body></html>

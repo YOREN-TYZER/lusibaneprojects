@@ -1,0 +1,26 @@
+[Unit]
+Description=Lusibane One (website + portal)
+After=network.target
+
+[Service]
+User=lusibane
+Group=lusibane
+WorkingDirectory=/opt/lusibane
+EnvironmentFile=/etc/lusibane.env
+ExecStart=/usr/bin/node --no-warnings /opt/lusibane/server.js
+Restart=on-failure
+RestartSec=3
+# Sandboxing: the app can only write to its data folder
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ReadWritePaths=/var/lib/lusibane /opt/lusibane/backups
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+SystemCallFilter=@system-service
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

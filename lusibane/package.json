@@ -1,0 +1,13 @@
+{
+  "name": "lusibane-one",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lusibane Projects website, customer portal and staff console. Zero third-party dependencies.",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test --no-warnings test/api.test.js",
+    "create-admin": "node scripts/create-admin.js",
+    "backup": "node scripts/backup.js"
+  }
+}
