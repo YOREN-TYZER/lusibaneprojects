@@ -1,4 +1,5 @@
-:root{color-scheme:light;--bg:#fff;--bg2:#f6f9f5;--bg3:#ecf2ec;--line:#dbe5db;--text:#0a140d;--mute:#53665a;--dim:#8a9a90;--g:#1E8E3E;--g2:#25a84b;--lime:#5BE37D;--deep:#0b2e1d;--ease:.4s cubic-bezier(.25,.46,.45,.94);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{color-scheme:only light}:root{color-scheme:only light;--bg:#fff;--bg2:#f6f9f5;--bg3:#ecf2ec;--line:#dbe5db;--text:#0a140d;--mute:#53665a;--dim:#8a9a90;--g:#1E8E3E;--g2:#25a84b;--lime:#5BE37D;--deep:#0b2e1d;--ease:.4s cubic-bezier(.25,.46,.45,.94);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{background:#fff;color-scheme:only light}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{font:400 16px/1.7 "Public Sans",system-ui,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
