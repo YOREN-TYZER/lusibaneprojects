@@ -14,19 +14,12 @@
     a.addEventListener('click', function () { $('s').value = a.dataset.p; });
   });
 
-  // household / organisation plan tabs
-  function tab(k) {
-    ['h', 'o'].forEach(function (x) {
-      var on = x === k;
-      $('t-' + x).setAttribute('aria-selected', on);
-      $('g-' + x).hidden = !on;
-    });
-  }
-  $('t-h').addEventListener('click', function () { tab('h'); });
-  $('t-o').addEventListener('click', function () { tab('o'); });
-  document.querySelectorAll('[data-tab]').forEach(function (a) {
-    a.addEventListener('click', function () { tab(a.dataset.tab); });
-  });
+  // phone menu
+  var nav = document.querySelector('nav'), mb = nav.querySelector('.mb');
+  function menu(open) { nav.classList.toggle('open', open); mb.setAttribute('aria-expanded', String(open)); }
+  mb.addEventListener('click', function () { menu(!nav.classList.contains('open')); });
+  nav.querySelectorAll('.nl a').forEach(function (a) { a.addEventListener('click', function () { menu(false); }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') menu(false); });
 
   // contact form: sent to the form service, which emails info@ and keeps a copy in its inbox
   var CFG = window.LUSIBANE || {};
